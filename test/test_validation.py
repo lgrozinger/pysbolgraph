@@ -56,15 +56,4 @@ class MetaTestClass(type):
 
 
 class TestValidation(unittest.TestCase, metaclass=MetaTestClass):
-
-    def addSubTest(self, subtest, outcome):
-        print(f"Testing {subtest.case}")
-        if outcome is not None:
-            print('❌ NOT valid')
-            for e in self.resp['errors']:
-                if "Namespace" not in e and e.strip():
-                    print('⚠️  ' + e)
-        else:
-            print('✅ Valid')
-
-        super().addSubTest(subtest, outcome)
+    pass
