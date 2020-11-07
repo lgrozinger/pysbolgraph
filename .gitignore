@@ -1,7 +1,8 @@
 *
-.gitignore
-.gitmodules
+!*/
+!.gitignore
+!.gitmodules
 !**/**/*.py
-README
-AUTHORS
-LICENSE
+!README
+!AUTHORS
+!LICENSE
